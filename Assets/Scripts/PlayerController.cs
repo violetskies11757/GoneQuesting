@@ -31,5 +31,10 @@ public class PlayerController : MonoBehaviour
 
         //Vector2 direction = new Vector2(xInput, yInput).normalized;
         //rb.velocity = direction * speed;
+
+
+
+
+        //Code Tutorial stopped at 9:40
     }
 }
