@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed;
+    public float drag;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +33,12 @@ public class PlayerController : MonoBehaviour
         //Vector2 direction = new Vector2(xInput, yInput).normalized;
         //rb.velocity = direction * speed;
 
+        void FixedUpdate()
+        {
+            rb.velocity *= drag;
+        }
 
 
-
-        //Code Tutorial stopped at 9:40
+        //Code Tutorial stopped at 16:40
     }
 }
